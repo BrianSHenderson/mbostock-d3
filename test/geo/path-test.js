@@ -287,7 +287,7 @@ suite.addBatch({
       },
       "area of a polygon": function(p) {
         var area = p.area({type: "Polygon", coordinates: [[[-122, 37], [-71, 42], [-80, 25], [-122, 37]]]});
-        assert.inDelta(area, 109403.096, 1e-3);
+        assert.inDelta(area, 109021.502, 1e-3);
       },
       "bounds of a line string": function(p) {
         var bounds = p.bounds({type: "LineString", coordinates: [[-122, 37], [-74, 40], [-100, 0]]});
@@ -298,8 +298,8 @@ suite.addBatch({
       },
       "centroid of a line string": function(p) {
         var centroid = p.centroid({type: "LineString", coordinates: [[-122, 37], [-74, 40], [-100, 0]]});
-        assert.inDelta(centroid[0], 434.667, 1e-3);
-        assert.inDelta(centroid[1], 397.897, 1e-3);
+        assert.inDelta(centroid[0], 434.654, 1e-3);
+        assert.inDelta(centroid[1], 397.940, 1e-3);
       }
     },
 
